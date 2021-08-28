@@ -1,11 +1,11 @@
-package hellojpa;
+package hellojpa.item;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
 @Entity
 @DiscriminatorValue("M") // DTYPE에 들어가는 값 설정(기본은 entity명)
-public class Movie extends Item{
+public class Movie extends Item {
     private String director;
     private String actor;
 
